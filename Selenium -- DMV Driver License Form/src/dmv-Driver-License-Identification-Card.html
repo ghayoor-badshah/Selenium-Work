@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Driver License OR Identification Card Application</title>
+	<meta charset="UTF-8">
+ 	<meta name="description" content="Driver License OR Identification Card Application">
+  	<meta name="author" content="Ghayoor Badshah">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{width:1024px;margin:auto;}
+#wrapper{width:100%;border:1px solid;}
+div{float:left;}
+p{margin:2px 5px 2px 5px;text-align:justify;}
+a{text-decoration:none;font-weight:bold;font-style:italic;}
+input{color:blue;}
+</style>
+</head>
+<body>
+	<div id = "wrapper">
+		<div style = "width:100%;">
+			<p style = "font-weight:bold;font-size:30px;font-style:italic;" id = "dmvHeading">DMV</p>
+		</div>	
+		<div>
+			<p style = "font-weight:bold;font-size:25px;">DRIVER LICENSE OR IDENTIFICATION CARD APPLICATION (DL 44)</p>
+			<p><i>USE BLACK OR BLUE INK ONLY, ALL SECTIONS MUST BE ANSWERED UNLESS OTHERWISE NOTED:</i></p>
+		</div>	
+		<div style = "width:100%;">
+			<p style = "font-style:italic;color:black;background-color:white;">Read all information and certifications before submitting the application.</p>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p style = "background-color:black;font-weight:bold;color:white;">1</p>
+			</div>
+			<div style = "width:98%;">
+				<p style = "font-weight:bold;background-color:black;color:white">WHAT ARE YOU APPLIYING FOR? <i>Check all that apply.</i></p>
+			</div>
+		</div>
+		<div style = "width:47%;">
+			<p><input type = "checkbox" id = "driverLicense"></input> <span id = "dLText">DRIVER LICENSE (DL)</span></p>
+			<p>What type of license?</p>	
+			<div>
+				<p><input type = "checkbox"></input> Driver License (Basic Class C)</p>
+				<p><input type = "checkbox"></input> Fifth Wheel/Travel Trailer(Noncommercial Class A)</p>
+			</div>
+			<div>
+				<p><input type = "checkbox"></input> Motorcycle</p>
+				<p><input type = "checkbox"></input> Housecar (Noncommercial Class B)</p>
+			</div>
+		</div>
+		<div style = "width:52%;">
+			<p><input type = "checkbox"></input> IDENTIFICATION CARD (ID)</p>
+			<p>What type of Identification Card?</p>	
+			<p><input type = "checkbox"></input> Identification Card</p>
+			<p><input type = "checkbox"></input> Senior Idenfication Card (Age 62 or older. Displays "Senior Identification Card" on the front of the card)</p>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p style = "background-color:black;font-weight:bold;color:white;">2</p>
+			</div>
+			<div style = "width:98%;">
+				<p style = "font-weight:bold;background-color:black;color:white;">WHAT DO YOU WANT TO DO? <i>Check all that apply.</i></p>
+			</div>
+		</div>
+		<div style = "width:30%">
+			<p><input type = "checkbox" id = "getIdCard"></input><span id = "idCardText">Get DL/ID card for the first time</p>
+			<p><input type = "checkbox"></input>Make a change or correction</p>
+			<p><input type = "checkbox"></input>Add or remove restrictions</p>
+		</div>
+		<div style = "width:30%">
+			<p><input type = "checkbox"></input>Renew an expired or existing DL/ID card</p>
+			<p><input type = "checkbox"></input>Replace a lost, stolen, or damaged DL/ID Card</p>
+			<p><input type = "checkbox"></input>Get a reduced fee ID card</p>
+		</div>
+		<div style = "width:30%">
+			<p><input type = "checkbox"></input>Add an ambulance certificate</p>
+			<p><input type = "checkbox"></input>Add a fire fighter endorsement</p>
+			<p><input type = "checkbox"></input>Remove a fire fighter endorsement</p>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p style = "background-color:black;font-weight:bold;color:white;">3</p>
+			</div>
+		
+			<div style = "width:98%;">
+				<p style = "font-weight:bold;background-color:black;color:white;">PREVIOUS LICENSING HISTORY</p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<p>Have you ever had a Driver License/Identification Card that was issued by California or another state/country?</p>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p><input type = "checkbox"></input>Yes <i>(Please complete section)</i></p>
+			</div>
+			<div>
+				<p><input type = "checkbox" id = "noToPreviousHistory"></input><span id = "noToPreviousHistoryText">No</span> <i>(Go to section 4)</i></p>
+			</div>
+		</div>
+		<div style = "width:100%">
+				<div style = "width:30%">
+					<p>DL/ID NUMBER</p>
+					<p><input style = "width:99%;" type = "text"></input></p>
+				</div>
+				<div style = "width:30%">
+					<p>STATE OR COUNTRY</p>
+					<p><input style = "width:99%;" type = "text"></input></p>
+				</div> 
+				<div style = "width:30%">
+					<p>EXPIRATION text</p>
+					<p><input style = "width:99%;" type = "text"></input></p>
+				</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width:50%;">
+				<p>HAVE YOU EVER HAD YOUR DRIVING PRIVILEGE CANCELLED, REFUSED, SUSPENDED?</p>
+				<div style = "width: 20%;">
+					<p><input type = "checkbox"></input>Yes</p>
+				</div>
+				<div style = "width: 20%;">
+					<p><input type = "checkbox"></input>No</p>
+				</div>
+			</div>
+			<div style = "width:49%;">
+				<p>IF YES</p>
+				<div>
+					<p>Year: <input type = "text"></input></p>
+				</div>
+				<div>
+					<p>Reason: <input type = "text"></input></p>
+				</div>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p style = "background-color:black;font-weight:bold;color:white;">4</p>
+			</div>
+		
+			<div style = "width:98%;">
+				<p style = "font-weight:bold;background-color:black;color:white;">TELL US WHO YOU ARE</p>
+			</div>
+		</div>
+		<div style = "width:100%">
+			<div style = "width: 45%;">
+				<p>FIRST NAME</p>
+				<p><input style = "width: 98%;" type = "text" id = "firstName"></input></p>
+				<p>LAST NAME</p>
+				<p><input style = "width: 98%;" type = "text" id = "lastName"></input></p>
+			</div>
+			<div style = "width: 45%;">
+				<p>MIDDLE NAME</p>
+				<p><input style = "width: 98%;" type = "text" id = "middleName"></input></p>
+				<p>SUFFIX <i>(JR,SR.,III)</i></p>
+				<p><input style = "width: 98%;" type = "text" id = "suffix"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%">
+			<div style = "width: 45%;">
+				<p>HAVE YOU EVER APPLIED FOR A DL/ID UNDER A DIFFERENT NAME(S)?</p>
+				<div>
+					<p><input type = "checkbox"></input>Yes</p>
+				</div>
+				<div>
+					<p><input type = "checkbox" id = "noTodifferentName"></input><span id = "noForDifferentNameText">No</span></p>
+				</div>
+			</div>
+			<div style = "width: 45%;">
+				<p>IF YES, PLEASE PRINT NAME(S) HERE</p>
+				<p><input style = "width: 98%;" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%">
+			<div style = "width:15%;">
+				<p>BIRTH DATE</p>
+				<p><input type = "text" id = "dateOfBirth"></input></p>
+			</div>
+			<div style = "width:15%;">
+				<p>SEX</p>
+				<div>
+					<p><input type = "checkbox" name = "sex" id = "male"></input><span id = "maleText">M</span></p>
+				</div>
+				<div>
+					<p><input type = "checkbox" name = "sex"></input>F</p>
+				</div>
+			</div>
+			<div style = "width:15%;">
+				<p>HAIR COLOR</p>
+				<p><input type = "text" id = "hairColor"></input></p>
+			</div>
+			<div style = "width:15%;">
+				<p>EYE COLOR</p>
+				<p><input type = "text" id = "eyeColor"></input></p>
+			</div>
+			<div style = "width:15%;">
+				<p>HEIGHT</p>
+				<p><input type = "text" id = "height"></input></p>
+			</div>
+			<div style = "width:15%;">
+				<p>WEIGHT</p>
+				<p><input type = "text" id = "weight"></input></p>
+			</div>
+		</div>
+		<div style = "width: 100%;">
+			<p>MAILING ADDRESS <i>(WHERE YOU WILL RECEIVE MAIL - INCLUDE CITY, STATE, AND ZIP CODE. THIS WILL APPEAR ON THE CARD RESIDENCE ADDRESS REQUIRED FOR P.O. BOXES)</i></p>
+			<p><input style = "width:98%;" type = "text" id = "mailingAddress"></input></p>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p style = "background-color:black;font-weight:bold;color:white;">5</p>
+			</div>
+		
+			<div style = "width:98%;">
+				<p style = "font-weight:bold;background-color:black;color:white;">DO YOU HAVE A SOCIAL SECURITY NUMBER? <i>All applicants must sign this section.</i></p>
+			</div>
+		</div>
+		<div style = "width: 100%;">
+			<div>
+				<p><input type = "checkbox" id = "yesToSocialSecurity"></input><span id = "yesToSocialSecurityText">Yes.</span><b>My Social Security Number is</b></p>
+			</div>
+			<div>
+				<p><input type = "text" id = "firstThreeDigitOfSocial"></input></p>
+			</div>
+			<div>
+				<p><b>-</b></p>
+			</div>
+			<div>
+				<p><input type = "text" id = "middleTwoDigitOfSocial"></input></p>
+			</div>
+			<div>
+				<p><b>-</b></p>
+			</div>
+			<div>
+				<p><input type = "text" id = "lastThreeDigitOfSocial"></input></p>
+			</div>
+		</div>
+		<div style = "width: 100%;">
+			<p><input type = "checkbox"></input>No Social Security Number has ever been issued to me and I am not presently eligible for a Social Security Number. I understand that pursuant to <i>California Vehicle Code</i> 12801, I must provide my Social Security Number to the Department of Motor Vehicle when one is assigned to me (read the attached Social Security disclosure statement).</p>
+		</div>
+		<div style = "width:100%;">
+			<p style = "font-weight:bold;font-style:italic;">I certify (or declare) under penalty of perjury under the laws of the State of California that the Social Security information provided on this form is true and correct.</p>
+		</div>
+		<div style = "width:100%">
+			<div style = "width: 40%;">
+				<p>APPLICANT&#39;S SIGNATURE</p>
+				<p><input style = "width: 98%" type = "text" id = "applicantSignature"></input></p>
+			</div>
+			<div style = "width: 40%">
+				<p>Date</p>
+				<p><input style = "width: 40%" type = "text" id = "toDayDate"></input></p>
+			</div>
+		</div>
+		<div style = "width: 100%;">
+			<p style = "font-weight:bold;font-style:italic;text-align:center">PLEASE TURN APPLICATION OVER AND CONTINUE ON THE NEXT PAGE.</p>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p style = "background-color:black;font-weight:bold;color:white;">6</p>
+			</div>
+		
+			<div style = "width:98%;">
+				<p style = "font-weight:bold;background-color:black;color:white;">PLEASE READ THE INFORMATION SECTION ON THE NEXT PAGE BEFORE ANSWERING QUESTIONS A - G.</p>
+				<p style = "font-style:italic">(* Program participation is voluntary.)</p>
+			</div>
+		</div>
+		<div style = "width: 100%;">
+			<p style = "font-style:italic;font-weight:bold;background-color:black;color:white;">Medical Conditions - FOR DRIVER LICENSE APPLICATION ONLY.</p>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p>A.</p>
+			</div>
+			<div>
+				<p>Have any medical conditions within the last three (3) years affected your ability to drive? ...</p>
+				<p><span style = "font-style:italic">IF YES,</span> Please explain <input type = "text"></input></p>
+			</div>
+			<div>
+				<p><input type = "checkbox"> Yes </input><input type = "checkbox" id = "noForMedicalCondiation"><span id = "noForMedicalConditionText">No</span></input></p>
+			</div>
+		</div>
+		<div style = "width: 100%;">
+			<p style = "font-style:italic;font-weight:bold;background-color:black;color:white;">Veterans Statement*</p>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p>B.</p>
+			</div>
+			<div>
+				<p>Have you ever served in the United States Military?....</p>
+				<p>If you have served, would you like to receive benefits information for which you may be eligible?...</p>
+				<p>If you have served, would you like to add the word "VETERAN" on your DL or ID card for a $5 fee?...</p>
+				<p><span style = "font-style:bold;">NOTE:</span>The word "VETERAN" will remain on your card unless you request otherwise. Remove "VETERAN" from my ...</p>
+			</div>
+			<div>
+				<p><input type = "checkbox"> Yes </input><input type = "checkbox" id = "noToVeteran"><span id = "noToVeteranText">No</span></input></p>
+				<p><input type = "checkbox"> Yes </input><input type = "checkbox"> No </input></p>
+				<p><input type = "checkbox"> Yes </input><input type = "checkbox"> No </input></p>
+				<p><input type = "checkbox"> DL </input><input type = "checkbox"> ID </input></p>
+			</div>
+		</div>
+		<div style = "width: 100%;">
+			<p style = "font-style:italic;font-weight:bold;background-color:black;color:white;">Organ and Tissue Donation*</p>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p>C.</p>
+			</div>
+			<div>
+				<p>Do you wish to be an Organ or Tissue Donor?......</p>
+				<p></p>
+			</div>
+			<div>
+				<p style = "font-style:bold"><input type = "checkbox"> Yes, add or keep my name on the donor registry.</p>
+				<p style = "font-style:bold"><input type = "checkbox" id = "noToOrganDonation"><span id = "noToOrganDonationText">I do not wish to register at this time.</span></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p>Marking "Yes" adds your name to the Donate Life California Organ and Tissue Donor Registry and a pink 'donor' dot will appear on your license. If you wish to remove your name from the registry, you must contact Donate Life California (see next page): DMV can remove the pink dot from your license but cannot remove you from the registry. <span style = "font-weight:bold">You must mark "Yes" to maintain the donor dot on your DL/ID Card. Marking "I do not wish to register at this time" will not remove you from the registry.</p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p>D.</p>
+			</div>
+			<div>
+				<p>Would you like to make a voluntary donation?....</p>
+			</div>
+			<div>
+				<p><input type = "checkbox"> Mark this box to provide a $2 voluntary contribution to support and promote organ and tissue donation.</p>
+			</div>
+		</div>
+		<div style = "width: 100%;">
+			<p style = "font-style:italic;font-weight:bold;background-color:black;color:white;"><span style = "font-style:normal;">Voter Registration &#x26a0; - FOR U.S. CITIZEN ONLY*</span></p>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p>E.</p>
+			</div>
+			<div>
+				<p>Are you a U.S. citizen?....</p>
+				<p></p>
+			</div>
+			<div>
+				<p><input type = "checkbox" id = "yesToUSCitizen"><b><span id = "yesToUSCitizenText">Yes,</span></b> I am a U.S. Citizen (Continue to "F")</p>
+				<p><input type = "checkbox"><span style = "font-weight:bold;">No,</span> I am not a U.S. Citizen (<span style = "font-weight:bold;">STOP,</span> proceed to Section 7)</p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p>F.</p>
+			</div>
+			<div>
+				<p>Are you eligible to vote?.....</p>
+				<p></p>
+			</div>
+			<div>
+				<p><input type = "checkbox" id = "yesToEligibleToVote"><span style = "font-weight:bold;" id = "yesToEligibleToVoteText">Yes,</span> I am eligible to vote.</p>
+				<p><input type = "checkbox"><span style = "font-weight:bold;">No,</span> I am not eligible to vote (<span style = "font-weight:bold;">STOP,</span> proceed to Section 7)</p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p>Marking "Yes, I am eligible to vote" means you meet <span style = "font-weight:bold;">all</span> of the following criteria: (a) you are a U.S. citizen and a resident of the California, (b) 18 years old or older on Election Day. (c) not found by a court to be mentally incompetent, and (d) not currently imprisoned or on parole for the conviction of a felony. Persons in county jail serving a misdemeanor sentence or in county jail as a condition of probation, or who are on probation, mandatory supervision, or post-release community supervision are eligible to register to vote.</p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p>G.</p>
+			</div>
+			<div style = "width:50%;">
+				<p>Do you wish to register to vote, change political party preference, or uptext voter address?</p>
+				<p style = "margin-left:5%;"><input type = "checkbox" id = "registerToVote"></input><span id = "registerToVoteText">I wish to register to vote.</span></p>
+				<p style = "margin-left:5%;"><input type = "checkbox">I wish to <span style = "font-weight:bold;">change</span></input> my voter registration information.</p>
+				<p style = "margin-left:10%;"><input type = "checkbox">I moved to a new permanent address in the <span style = "font-style:italic;">same</span></input> county.</p>
+				<p style = "margin-left:10%;"><input type = "checkbox">I moved to a new permanent address in the <span style = "font-style:italic;">differnt</span></input> county.</p>
+				<p style = "margin-left:10%;"><input type = "checkbox">I wish to uptext my political party preference or other voter registration information.</p>
+				<p style = "margin-left:5%;"><input type = "checkbox">I am currently registered to vote and <b>not</b> wish to change my voter registration information.</input></p>
+				<p style = "margin-left:5%;"><input type = "checkbox">I do <b>not</b> wish to register to vote.</input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p style = "background-color:black;font-weight:bold;color:white;">7</p>
+			</div>
+		
+			<div style = "width:98%;">
+				<p style = "font-weight:bold;background-color:black;color:white;">IF THE DRIVER LICENSE APPLICANT IS UNDER THE AGE OF 18, COMPLETE THIS SECTION.</p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div style = "width: 100%;">
+				<div style = "width: 100%;">
+					<p>Signature of the parent(s) or guardian(s) is required if applicant is under the age of 18. If there is more than one parent or guardian with custody. BOTH MUST SIGN.</p>
+				</div>
+				<div>
+					<p><input type = "checkbox"></input></p>
+				</div>
+				<div>
+					<p style = "font-weight:bold">I/We accept civil liability for the minor and understand a provisional permit issued to a minor is not valid until he/she begins driver training.</span>
+				</div>
+		</div>
+		<div style = "width: 100%;">
+			<div>
+				<p>PARENT/GUARDIAN SIGNATURE</p>
+				<p><input style = "width: 100%;" type = "text"></input></p>
+				<div>
+					<p>text</p>
+					<p><input type = "text"></input></p>
+				</div>
+				<div>
+					<p>DAYTIME TELEPHONE NUMBER</p>
+					<p><input type = "text"></input></p>
+				</div>
+				<p>PARENT/GUARDIAN SIGNATURE</p>
+				<p><input style = "width: 100%;" type = "text"></input></p>
+				<div>
+					<p>Date</p>
+					<p><input type = "text"></input></p>
+				</div>
+				<div>
+					<p>DAYTIME TELEPHONE NUMBER</p>
+					<p><input style = "width:100%" type = "text"></input></p>
+				</div>
+			</div>
+			<div>
+				<p>ADDRESS <i>(STREET/APT NUMBER)</i></p>
+				<p><input style = "width: 100%;" type = "text"></input></p>
+				<div>
+					<p>CITY</p>
+					<p><input type = "text"></input></p>
+				</div>
+				<div>
+					<p>STATE</p>
+					<p><input type = "text"></input></p>
+				</div>
+				<div>
+					<p>ZIP CODE</p>
+					<p><input type = "text"></input></p>
+				</div>
+				<p>ADDRESS <i>(STREET/APT NUMBER)</i></p>
+				<p><input style = "width: 100%;" type = "text"></input></p>
+				<div>
+					<p>CITY</p>
+					<p><input type = "text"></input></p>
+				</div>
+				<div>
+					<p>STATE</p>
+					<p><input type = "text"></input></p>
+				</div>
+				<div>
+					<p>ZIP CODE</p>
+					<p><input type = "text"></input></p>
+				</div>
+			</div>
+		</div>
+		<div style = "width:100%;">
+			<div>
+				<p style = "background-color:black;font-weight:bold;color:white;">8</p>
+			</div>
+		
+			<div style = "width:98%;">
+				<p style = "font-weight:bold;background-color:black;color:white;">CERTIFICATION &#x26a0; - DO NOT SIGN UNTIL INSTRUCTED TO DO SO BY DMV EMPLOYEE AT DMV OFFICE.</p>
+			</div>
+		</div>
+		<div style = "width: 100%;">
+			<p style = "font-style:bold;font-style:italic;">I certify that I have read, understand and agree with the contents of this form. I acknowledge that I have received a copy of the declarations and certification statements pertaining to the issuance of a driver license or identification card. I certify (or declare) under penalty of perjury under the laws of the State of California that the foregoing is true and correct.</p>
+			<div>
+				<p>APPLICANT&#39S SIGNATURE</p>
+				<p><input style = "width:100%" type = "text"></input></p>
+			</div>
+			<div>
+				<p>DAYTIME TELEPHONE NUMBER</p>
+				<p><input style = "width:100%" type = "text"></input></p>
+			</div>
+			<div>
+				<p>Date</p>
+				<p><input style = "width:100%" type = "text"></input></p>
+			</div>
+		</div>
+		<div style = "width:100%;">
+				<p style = "text-align:center;">IT IS IMPORTANT THAT YOU READ AND UNDERSTAND</p>
+				<p style = "text-align:center;">THE FOLLOWING INFORMATION AND CERTIFICATIONS</p>
+		</div>
+		<hr>
+		<div style = "width:100%;">
+			<p style = "text-align:center;font-weight:bold;font-size:22px;">MEDICAL INFORMATION</p>
+			<p>The following conditions that may affect your ability to operate a motor vehicle safely include, but are not limited to:</p>
+			<p>
+				<ul>
+					<li>loss of consciousness; or</li>
+					<li>episode of marked confusion caused by any condition which may bring about recurring lapses; or</li>
+					<li>disease, disorder, or disability (exmaples of these are epilepsy, diabetes, stroke, cataracts, Parkinson&#39;s disease); or</li>
+					<li>decrease or change in your vision due to cataracts, macular degeneration, diabetic retinopathy, glaucoma, retinitis pigmentosa, or other progressive condition; or</li>
+					<li>health problems because of alcohol or drug abuse.</li>
+				</ul>
+			</p>
+		</div>
+		<hr>
+		<div style = "width:100%;">
+			<p style = "text-align:center;font-weight:bold;font-size:22px;">VETERAN STATEMENT</p>
+			<p>
+				<ul>
+					<li>By marking the veteran box on this application, I certify that I am a veteran of the United States Armed Forces and that I want to receive veteran benefits information from the California Department of Veterans Affairs. By marking the veteran box on this application, I also consent to Department of Motor Vehicles(DMV) transmitting my name and mailing address to the California Department of Veterans Affairs for this purpose only, and I certify that I have been notified that this transmital will occur.</li>
+					<li>The veteran designation is a way to identify and honor the service of California&#39;s veterans. As a veteran you may choose to mark the face of your driver license or identification (DL/ID) card with the word "VETERAN" to indicate you have served in the United States Armed Forces, for a fee of $5 per card, in addition to all applicable fees. Once the veteran designation has been added, any future cards will have the designation and additional documentation will not be required at renewal.</li>
+				</ul>
+			</p>
+		</div>
+		<hr>
+		<div style = "width:100%;">
+			<p style = "text-align:center;font-weight:bold;font-size:22px;">ORGAN DONOR STATEMENT</p>
+			<p>If you marked 'Yes' to register as an organ and tissue donor, you are legally authorizing the recovery of organs and tissues in the event of your death. Registering as a donor will not affect your medical treatment in any way. As outlined in the California Anatomical Gift Act, your authorization is legally binding and, unless the donor is under 18 years of age, your decision does not require the consent of any other person. For registered donors under 18 years of age, the legal guardian shall make the final decision. You may limit your donation to specific organs or tissues, place usage restrictions (for the example transplantation or research), obtain more information about donation, or remove your name from the registry on the website of Donate Life California: <a href ="http://www.donatelifecalifornia.org">www.donateLIFEcalifornia.org</a>. By registering as an Organ Donor, you are giving your consent to allow DMV to electronically transmit your true full name, residence or mailing address, year of birth, and California driver license or identification card number to Donate Life California. By signing this form, you consent to this process and have been notified that this transmittal will occur.</p>
+		</div>
+		<hr>
+		<div style = "width:100%;">
+			<p style = "text-align:center;font-weight:bold;font-size:22px;">VOTER REGISTRATION</p>
+			<p>
+				<ul>
+					<li>If sharing your address could put you in life-threating danger, you may be eligible to register to vote confidentially. For more information, contact the <b> Safe at Home </b>program at (877) 322-5227 or visit <a href = "http://www.sos.ca.gov/safeathome/">www.sos.ca.gov/safeathome/.</a></li>
+					<li><span style = "font-weight:bold;text-decoration:underline;">For U.S. citizens only. </span>If the voter has not received voter registration information within 30 days of requesting it, they should contact the Local Elections Office or the California Secretary of State.</li>
+					<li>By registering to vote at DMV, you acknowledge that DMV will send your digital signature, information, and registration selection to the California Secretary of State in order to complete the voter registration process.</li>
+					<li>If you do not wish to register to vote, your decision will remain confidential and will be used only for voter registration purposes.</li>
+					<li>If you wish to register to vote, the office where you registered will remain confidential and will be used only for voter registration purposes.</li>
+				</ul>
+			</p>
+		</div>
+		<hr>
+		<div style = "width:100%;">
+			<p style = "text-align:center;font-weight:bold;font-size:22px;">CRIMINAL PROSECUTION</p>
+			<p>
+				<ul>
+					<li>If you submit fraudulent information, the DMV may pursue criminal prosecution.</li>
+					<li>Any person who uses false documents to conceal his or her true citizenship or resident alien status is guilty of a felony pursuant to <i>California Panel Code</i> 114.</li>
+				</ul>
+			</p>
+		</div>
+		<hr>
+		<div style = "width: 100%;">
+			<p style = "text-align:center;font-weight:bold;font-size:22px;">REFUND</p>	
+			<p>
+				<ul>
+					<li>Once this application form and fee have been submitted, no refunds will be made.</li>
+				</ul>
+			</p>
+		</div>
+		<hr>
+		<div style = "width: 100%;">
+			<p style = "text-align:center;font-weight:bold;font-size:22px;">PRIVACY NOTICE</p>	
+			<p>
+				<ul>
+					<li>DMV uses the information on this form to determine your eligibility for a Driver License or Identification Card and for the administration of driver license laws.</li>
+					<li>Information provided to DMV on this form is collected and subject to the limitations in the Information Practices Act <i>(Civil Code </i> 1798 et seq, the Driver&#39;s Privacy Protection Act (18 U.S.C. 2721-2725), the <i>California Vehicle Code,</i> and other applicable state and federal laws and regulations.</li>
+					<li>For more information regarding specific Vehicle Code Sections, please visit <a href = "https://www.dmv.ca.gov">www.dmv.ca.gov</a> and at the bottom of the page, click the "Privacy Policy" link. On the Privacy Policy page, click Driver License Notice on Collection.</li>
+					<li>DMV verifies the information and documents you provide with other governmental agencies.</li>
+					<li>All information on this form is mandatory except where noted.</li>
+					<ul style = "list-style-type:none;">
+						<li>&#10003;&nbsp;&nbsp;DMV may deny your applicaiton for not providing the required information.</li>
+						<li>&#10003;&nbsp;&nbsp;Failure to provide the information required on this form is cause for refusal to issue a driver license or identification card, or, in some cases, cancellation or withdrawal of the driving privilege.</li>
+					</ul>
+					<li>DMV shares your information with other governmental agencies and commercial entities as authorized by law. For more information regarding sharing of your information, please visit <a href = "http://www.dmv.ca.gov">www.dmv.ca.gov</a> and at the bottom of the page, click the "Privicy Policy" link. On the Privicy Policy page, click Driver License Notice on Collection or request a copy of <i>"How your DMV Information is Shared or Used"</i> (FFDMV 17) from any field office.</li>
+					<li>You may obtain a copy of your record at <a href ="http://www.dmv.ca.gov">www.dmv.ca.gov</a> or at any DMV field office during regular office hours. For assistance with access to your record, call (800) 777-0133 or make an appointment to visit a DMV field office during regular hours.</li>
+					<ul style = "list-style-type:none;">
+						<li>&#10003;&nbsp;&nbsp;For assistance with correction to your record, contact DMV&#39;s Mandatory Actions Unit at (916) 657-6525.</li>
+					</ul>
+					<li>Questions regarding your Driver License or Identification Card should be addressed to:</li>
+					<ul style = "list-style-type:none;margin-left:40%;">
+						<li>Driver License Inquires</li>
+						<li>Department of Motor Vehicles</li>
+						<li>PO Box 942890</li>
+						<li>Sacramento, CA 94290-0001</li>
+					</ul>
+					<li>DMV&#39;s Privacy Policy is located at <a href = "href://www.dmv.ca.gov">www.dmv.ca.gov</a> under the "Privacy Policy" link at the bottom of the page.</li>
+				</ul>
+			</p>
+		</div>
+		<hr>
+		<div style = "width:100%;">
+			<p style = "text-align:center;font-weight:bold;font-size:22px;">CERTIFICATIONS</p>
+			<p>
+				<ul>
+					<li>I agree to submit to a chemical test of my blood, breath, or urine for the purpose of determining the alcohol or drug content of my blood when testing is requested by a peace officer acting in accordance with <i>California Vehicle Code</i> (CVC) 23612.</li>
+					<li>I am hereby advised that being under the influence of alcohol or drugs, or both, impairs the ability to safely operate a motor vehicle. Therefore, it is extremely dangerous to human life to drive while under the influence of alcohol or drugs, or both. If I drive while under the influence of alcohol or drugs, or both, and as result, a person is killed, I can be charged with murder.</li>
+					<li>By signing this application, I certify that I was notified that if I am under 21 years of age, I cannot legally drive with a blood alcohol concentration (BAC) of 0.01% or more. During with BAC of 0.01% or more, or resulting to take, or failing to complete an alcohol screeing or drug test, result in a one-year suspension of my driving privilege.</li>
+					<li>By signing this application, I certify that I was notified that if I am currently on court probation for a driving under the influence offense, I cannot legally drive with blood alcohol concentration (BAC) of 0.01% or more. Driving with BAC of influence offense, I cannot legally drive with a blood alcohol concentration (BAC) of 0.01% or more. Driving with BAC of 0.01% or more results in a one-year suspension of my driving privilege. Refusing to take, or failing to complete an alcohol screening or chemical test will result in a two to three year suspension/revocation of my driving privilege.</li>
+					<li>I am the person whose name appears on the front of this form. The mailing address shown is valid, existing, and accurate. I agree to accept service of process at this mailing address according to 415.30(a), and 416.90 of the <i>California Code of Civil Procedure</i></li>
+					<li>I understand DMV may add traffic convictions reported by other states or jurisdictions to my driving record that may result in sanctions against my California driving privilege.</li>
+					<li>By signing this form, I acknowledging my presence in the United States is authorized under federal law, except as specified in CVC 12801.</li>
+					<li>I understand I may have no more than one year driver license in my possession or under my control in accordance with CVC 12511.</li>
+					<li>By signing this application, I certify that I understand traffic signs and signals in accordance with CVC 12800(h).</li>
+				</ul>
+			</p>
+		</div>
+		<hr>
+	</div>
+</body>
+</html>
